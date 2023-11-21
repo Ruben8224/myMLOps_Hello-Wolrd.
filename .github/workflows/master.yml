@@ -65,6 +65,6 @@ jobs:
           KUBECONFIG: ${{ steps.namespace.outputs.kubeconfig }}
         with:
           namespace: ${{secrets.OKTETO_NAMESPACE }}
-          manifest: manifests/linear_model_ka8s.yaml
+          manifest: manifests/linear_model_kas8s.yaml
           tag: ${{ secrets.DOCKER_USERNAME }}/tensorflow_${{secrets.MODEL_NAME}}:${{ github.sha }}
 #sda
